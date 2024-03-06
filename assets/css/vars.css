@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "OswaldBold";
+    src: url(./../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: "OswaldRegular";
+    src: url(./../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OswaldLight";
+    src:url(./../fonts/Oswald-Light.ttf);
+}
+
+:root{
+    --font-destaque: "OswaldBold";
+    --font-normal: "OswaldRegular";
+    --font-light: "OswaldLight";
+}
