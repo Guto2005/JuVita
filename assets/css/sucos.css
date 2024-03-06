@@ -1,0 +1,27 @@
+.sucos {
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-auto-rows: 400px;
+    gap: 16px;
+    padding-top: 80px;
+    margin-top: solid 20px rgb(114, 243, 114) ;
+}
+
+.sucos-title {
+    grid-area: titulo;
+    padding-top: 80px;
+}
+
+.lado-esq p {
+    grid-area: texto;
+    padding-left: 80px;
+}
+
+.sucos-btn {
+    grid-area: button;
+    color: rgb(38, 155, 2);
+    font-size: 20px;
+    border: 2px solid rgb(131, 245, 131);
+    border-radius: 20px;
+    height: 50px;
+}
