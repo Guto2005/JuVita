@@ -1,4 +1,41 @@
 
+.banner {
+    display: flex;  
+    background-image: url(./../img/cel-banner.png);
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+.banner_txt {
+    font-size: 30px;
+    padding-left: 80px;
+    padding-top: 180px;
+}
+
 .banner_imgs {
-    
+    display: flex;
+    padding-top: 80px;
+    padding-left: 80px;
+    gap: 32px;
+}
+
+.banner_imgs img{
+    display: inline;
+    gap: 64px;
+    width: 13%; 
+    height: 13%;
+    border-radius: 20px;
+}
+
+.logo-banner {
+    color: orange;
+}
+
+.first-title {
+    width: 90%;
+}
+
+.second-title {
+    font-size: 28px;
+    width: 75%;
 }
