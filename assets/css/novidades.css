@@ -1,0 +1,34 @@
+.novidades {
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-areas: "esq dir"
+                          ".  dir";
+    grid-auto-rows: 400px;
+    gap: 16px;
+    padding-top: 80px;
+    padding-left: 80px;
+    background-color: rgb(250, 243, 235);
+}
+
+.news-esq {
+    padding-top: 120px;
+    grid-area: esq;
+}
+
+.news-title {
+    padding-top: 20px;
+    font-size: 35px;
+    border-top: solid 20px rgb(23, 236, 23);
+}
+
+.news-esq p {
+    font-size: 20px;
+}
+
+.news-span {
+    color: rgb(38, 155, 2);
+}
+
+.news-dir img {
+    grid-area: dir;
+}
