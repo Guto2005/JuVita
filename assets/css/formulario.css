@@ -1,11 +1,87 @@
-.form {
+.formulario {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas: "esq texto"
-                          "esq formu";
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "img texto"
+                         "img form";
     grid-auto-rows: 400px;
+}
+
+label {
+    display: block;
+}
+
+.form {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr;
+    grid-template-areas: 
+                         "name name name name"
+                         "cpf cpf cep cep"
+                         "ende ende ende ende"
+                         "num num comp comp"
+                         "city city state cel";
+    grid-auto-rows: 200px;
+}
+
+.form-esq img{
+    grid-area: img;
+}
+
+.form-dir {
+    grid-area: texto;
 }
 
 .form-control label{
     font-size: 20px;
 }
+
+.form-control input {
+    border-color: rgb(2, 172, 2);
+    height: 30px;
+    border-radius: 20px;
+}
+
+.form-control {
+    display: grid;
+}
+
+.yourname {
+    grid-area: name;
+}
+
+.cpf {
+    grid-area: cpf;
+}
+
+.cep {
+    grid-area: cep;
+}
+
+.endereço {
+    grid-area: ende;
+}
+
+.numero {
+    grid-area: num;
+}
+
+.complemento {
+    grid-area: comp;
+}
+
+.cidade {
+    grid-area: city;
+}
+
+.estado {
+    grid-area: state;
+}
+
+.celular {
+    grid-area: cel;
+}
+
+
+
+
+
