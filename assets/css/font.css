@@ -6,10 +6,18 @@ h3 {
     font-family: "OswaldRegular";
 }
 
+h4 {
+    font-family: "OswaldRegular";
+}
+
 p {
     font-family: "OswaldRegular";
 }
 
 button {
     font-family:"OswaldLight"
+}
+
+label {
+    font-family: "OswaldBold";
 }

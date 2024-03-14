@@ -1,0 +1,66 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas: "site ender cont"
+                         "dev dev dev";
+    padding-top: 80px;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+    grid-area: site;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    grid-area: ender;
+}
+
+.endereco h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.unidades {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.unidade1 ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.unidade2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.unidade3 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+    grid-area: cont;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    grid-area: dev;
+}

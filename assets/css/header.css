@@ -2,16 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 10px solid orange;
+    flex-direction: row;
+    border-bottom: 12px solid orange;
+    padding-top: 10px;
     padding-bottom: 20px;
+    max-width: 1160px;
+    min-width: 360px;
 }
 
 .topo-esq {
-    padding-right: 100px;
+    max-width: 100%;
+    min-width: 128px;
 }
 
 .topo-dir {
-    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .btn-pesquisa {
@@ -23,11 +29,38 @@
     font-size: 20px;
 }
 
-.fa-bars {
-    margin-left: 30px;
+.topo .menu-icon {
+    width: 32px;
+    display: flex;
 }
 
+.fa-bars {
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
 
+@media screen and (max-width:510px) {
+    .topo {
+      flex-direction: column;
+      justify-content: center;
+      min-width: 320px;
+    }
+
+    .topo .topo-img {
+        max-width: 50%;
+    }
+
+    .topo div {
+        width: 100%;
+    }
+
+    .btn-pesquisa {
+        width: 80%;
+    }
+    :root {
+        font-size: 12px;
+    }
+}
 
 
 

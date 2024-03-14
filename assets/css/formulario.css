@@ -4,14 +4,27 @@
     grid-template-areas: "img texto"
                          "img form";
     grid-auto-rows: 400px;
+    height: 1600px;
+}
+
+.form-span {
+    color: rgb(36, 218, 36);
+}
+
+.span-juvita {
+    color: black;   
+    font-size: 20px;
 }
 
 label {
     display: block;
 }
 
-.form {
+.form-grid {
     grid-area: form;
+}
+
+#form {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr 2fr;
     grid-template-areas: 
@@ -21,10 +34,53 @@ label {
                          "num num comp comp"
                          "city city state cel";
     grid-auto-rows: 200px;
+    gap: 40px;
 }
+
+.form__btn-area {
+    display: flex;
+    gap: 64px;
+    position: relative;
+    height: 10%;
+}
+
+.form-btn1 {
+    background-color: white;
+    color: green;
+    border-radius: 20px;
+    border: 2px solid rgb(18, 138, 18);
+}
+
+.form-btn1:hover{
+   background-color: white;
+   animation-name: btn-transform;
+   animation-delay: 0.45s;
+   animation-timing-function: ease-in-out;
+   animation-duration: 0.5s;
+   animation-fill-mode: both;
+}
+
+.form-btn2 {
+    background-color: white;
+    color: green;
+    width: 20%;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.form-btn2:hover{
+    background-color: white;
+    animation-name: btn-transform;
+    animation-delay: 0.45s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+ }
 
 .form-esq img{
     grid-area: img;
+    height: auto;
+    padding-top: 150px;
 }
 
 .form-dir {
@@ -36,8 +92,9 @@ label {
 }
 
 .form-control input {
-    border-color: rgb(2, 172, 2);
     height: 30px;
+    border: 2px solid;
+    border-color: rgb(2, 172, 2);
     border-radius: 20px;
 }
 
@@ -81,7 +138,23 @@ label {
     grid-area: cel;
 }
 
+label {
+    position: relative;
+    top: 60px;
+}
 
+@keyframes btn-transform {
+    0% {
+        background-color: rgb(255, 255, 255);
+        animation-play-state: running;
+        color: green;
+    }
 
+    100% {
+        background-color: rgb(33, 161, 4);
+        animation-play-state: paused;
+        color: white;
+    }
+}
 
 
